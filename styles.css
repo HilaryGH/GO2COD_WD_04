@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:hsl(0, 0%, 70%);
+}
+.container{
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 5%;
+}
+.gallery{
+  width:100%;
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 16px;
+}
+.gallery img{
+  width:100%;
+  height: 250px; 
+    object-fit: cover;  
+  border-radius: 5px;
+}
+.gallery img:hover{
+  filter:grayscale(100%);
+  transform:scale(1,1);
+}
