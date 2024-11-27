@@ -30,3 +30,34 @@ body{
   filter:grayscale(100%);
   transform:scale(1,1);
 }
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+  
+  .gallery img {
+    height: 200px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+  }
+
+  .gallery img {
+    height: 170px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
